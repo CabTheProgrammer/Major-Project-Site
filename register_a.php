@@ -10,7 +10,7 @@ if(isset($_POST['save']))
 	 $sql = "INSERT INTO register (first_name,last_name,email,password)
 	 VALUES ('$first_name','$last_name','$email','$pass')";
 	 if (mysqli_query($conn, $sql)) {
-		header("Location: login.php");
+		header("Location: index.php");
 		//echo "New record created successfully !";
 	 } else {
 		echo "Error: " . $sql . "
